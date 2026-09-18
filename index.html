@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Alowyy1 — Bio</title>
+    <link rel="icon" type="image/png" href="assets/wm_standart.png?v=43.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=43.0">
+</head>
+<body class="dark-theme">
+    <div class="custom-cursor" id="cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+    </div>
+
+    <div id="start-screen">
+        <div class="start-glass-card liquid-interactive">
+            <div class="start-pulse-dot"></div>
+            <div id="start-text">click to enter &lt;3</div>
+            <div class="start-subtext">Tap anywhere to launch</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="video-container">
+            <video id="bg-video" class="background-video" playsinline loop preload="none" muted poster="assets/bg.webp"></video>
+            <audio id="bg-audio" preload="none"></audio>
+            <div class="video-cinematic-overlay"></div>
+        </div>
+
+        <div class="liquid-ambient-canvas">
+            <div class="liquid-orb orb-1"></div>
+            <div class="liquid-orb orb-2"></div>
+            <div class="liquid-orb orb-3"></div>
+        </div>
+
+        <div id="profile-wrapper" class="hidden">
+            <div id="profile-block" class="liquid-glass-panel">
+                <div class="glass-specular-sheen"></div>
+                <div class="glass-caustic-edge"></div>
+                <div class="glass-fluid-lens"></div>
+
+                <div class="profile-header">
+                    <div class="profile-container">
+                        <div class="avatar-glass-ring"></div>
+                        <img src="assets/avatar.webp" alt="Alowyy1" class="profile-picture" width="76" height="76" decoding="async">
+                    </div>
+                    <div class="profile-info">
+                        <div class="name-and-badges">
+                            <div id="profile-name">Alowyy1</div>
+                        </div>
+                    </div>
+                </div>
+
+                <a id="profile-bio" href="https://work.alowyy1.com/" target="_blank" class="liquid-glass-badge bio-link-badge liquid-interactive" title="Мои работы / My works">
+                    <img src="assets/wm_standart.png" alt="Icon" class="bio-badge-icon" width="20" height="20" decoding="async">
+                    <span id="profile-bio-text">Мои работы / My works</span>
+                    <svg class="bio-badge-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                </a>
+
+                <div class="profile-footer">
+                    <div class="footer-row">
+                        <div id="lanyard-widget" style="display: none;">
+                            <a href="https://discord.com/users/980154022847733770" target="_blank" id="lanyard-link" class="liquid-subglass liquid-interactive">
+                                <div id="lanyard-avatar-wrap">
+                                    <img id="lanyard-avatar" src="https://cdn.discordapp.com/embed/avatars/0.png" alt="Avatar" width="36" height="36" decoding="async">
+                                    <div id="lanyard-status-dot"></div>
+                                </div>
+                                <div id="lanyard-info">
+                                    <div id="lanyard-name">Alowyy1</div>
+                                    <div id="lanyard-activity">Loading status...</div>
+                                </div>
+                                <div id="lanyard-open">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="social-links">
+                            <div class="social-icons-row">
+                                <a href="https://steamcommunity.com/id/Alowyy1/" target="_blank" class="social-glass-btn liquid-glass-btn liquid-interactive" title="Steam">
+                                    <img src="assets/icons/steam.png" alt="Steam" class="social-icon" width="26" height="26" decoding="async">
+                                </a>
+                                <a href="https://t.me/Alowyy1" target="_blank" class="social-glass-btn liquid-glass-btn liquid-interactive" title="Telegram">
+                                    <img src="assets/icons/telegram.png" alt="Telegram" class="social-icon" width="26" height="26" decoding="async">
+                                </a>
+                                <a href="https://github.com/Alowyyy1" target="_blank" class="social-glass-btn liquid-glass-btn liquid-interactive" title="GitHub">
+                                    <img src="assets/icons/github.png" alt="GitHub" class="social-icon" width="26" height="26" decoding="async">
+                                </a>
+                                <a href="https://youtube.com/@alowyy1" target="_blank" class="social-glass-btn liquid-glass-btn liquid-interactive" title="YouTube">
+                                    <img src="assets/icons/youtube.png" alt="YouTube" class="social-icon" width="26" height="26" decoding="async">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bio-footer-bottom">
+                        <div class="visitor-counter liquid-glass-badge">
+                            <svg class="visitor-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                            </svg>
+                            <span id="visitor-count">0</span>
+                            <span class="tooltip">Unique Profile Views</span>
+                        </div>
+                        <button id="collapse-bio-btn" class="collapse-glass-btn liquid-interactive" title="Свернуть BIO">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <button id="expand-bio-btn" class="expand-glass-btn liquid-interactive hidden" title="Развернуть BIO">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+            </button>
+
+            <div id="media-player" class="liquid-player-island">
+                <div class="player-glass-specular"></div>
+                <div id="media-player-inner">
+                    <div class="mp-cover-wrap">
+                        <img id="mp-cover" src="assets/music/prada_party.webp" alt="Cover" width="58" height="58" decoding="async">
+                        <div class="mp-cover-gloss"></div>
+                    </div>
+                    <div id="mp-content">
+                        <div class="mp-title-wrap">
+                            <h1 id="mp-title">PRADA PARTY</h1>
+                            <span id="mp-artist">Kai Angel</span>
+                        </div>
+                        <div id="mp-timeline-container">
+                            <span id="mp-current-time" class="time-label">0:00</span>
+                            <div id="mp-progress-wrap">
+                                <input id="mp-seek" type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek track">
+                                <div id="mp-progress-bar">
+                                    <div id="mp-progress-fill"></div>
+                                    <div id="mp-progress-dot"></div>
+                                </div>
+                            </div>
+                            <span id="mp-total-time" class="time-label">0:00</span>
+                        </div>
+                    </div>
+                    <div id="mp-controls">
+                        <button id="mp-prev" class="mp-btn liquid-interactive" title="Restart Video">
+                            <svg width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M7 6c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1s-1-.45-1-1V7c0-.55.45-1 1-1m3.66 6.82l5.77 4.07c.66.47 1.58-.01 1.58-.82V7.93c0-.81-.91-1.28-1.58-.82l-5.77 4.07a1 1 0 0 0 0 1.64"></path></svg>
+                        </button>
+                        <button id="mp-play" class="mp-btn mp-play-liquid liquid-interactive" title="Play / Pause">
+                            <svg width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+                        </button>
+                        <button id="mp-next" class="mp-btn liquid-interactive" title="Replay Video">
+                            <svg width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="m7.58 16.89l5.77-4.07c.56-.4.56-1.24 0-1.63L7.58 7.11C6.91 6.65 6 7.12 6 7.93v8.14c0 .81.91 1.28 1.58.82M16 7v10c0 .55.45 1 1 1s1-.45 1-1V7c0-.55-.45-1-1-1s-1 .45-1 1"></path></svg>
+                        </button>
+                        <div id="mp-volume-wrap">
+                            <button id="mp-volume-btn" class="mp-btn liquid-interactive" title="Mute / Unmute">
+                                <svg id="mp-volume-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="currentColor"></polygon>
+                                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                                </svg>
+                            </button>
+                            <div id="mp-volume-slider-container">
+                                <input id="mp-volume" type="range" min="0" max="1" step="0.01" value="0.75" aria-label="Volume">
+                                <div id="mp-volume-bar">
+                                    <div id="mp-volume-fill" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/gsap.min.js"></script>
+    <script src="script.js?v=43.0"></script>
+</body>
+</html>
