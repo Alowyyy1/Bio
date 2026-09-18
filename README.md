@@ -6,8 +6,6 @@
 
 Open-source repository containing the complete, transparent client-side code for my personal bio and portfolio website hosted at [alowyy1.com](https://alowyy1.com).
 
-![Preview](preview.png)
-
 ---
 
 ## 📌 Overview
