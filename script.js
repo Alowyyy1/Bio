@@ -678,7 +678,7 @@ async function fetchLanyard() {
     const customStatus = (custom && custom.state) ? custom.state : '';
 
     let nameText = displayName;
-    if (customStatus) nameText += ` — ${customStatus}`;
+    if (customStatus) nameText += ` - ${customStatus}`;
 
     let innerHtml = `
       <div id="lanyard-avatar-wrap">
